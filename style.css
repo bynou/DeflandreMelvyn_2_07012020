@@ -1,15 +1,20 @@
 @font-face{
-    font-family: "Ralewayvariable";
-    src: url("polices/Raleway/Raleway-VariableFont_wght.ttf") format("truetype");
+    font-family: "ralewayregular";
+    src: url("polices/Raleway/static/Raleway-Regular.ttf") format("truetype");
+
+}
+@font-face{
+    font-family: "ralewaybold";
+    src: url("polices/Raleway/static/Raleway-ExtraBold.ttf") format("truetype");
 
 }
 @font-face {
-    font-family: myFirstFont;
+    font-family: "myFirstFont";
     src: url("polices/Raleway/Raleway-Bold.ttf")format("truetype");
     font-weight: bold;
   }
 body{
-    font-family:"ralewayvariable";
+    font-family:"ralewayregular";
   
     margin-top: 0px;
     margin:0;
@@ -147,7 +152,7 @@ td.research_image{
 {
 
     display:flex;
-    
+    flex-wrap: wrap;
 }
 
 
@@ -281,19 +286,17 @@ td.research_image{
 {
    
     overflow: hidden;
-    object-fit: contain;
     
 }
 .hebergement_marseille_panneau_conteneur_logement_vignette_img
 {
-width:100%;
-height:95px;
-border-radius: 10px 10px 0 0;
+    width:100%;
+    height:95px;
+    border-radius: 10px 10px 0 0;
+    object-fit: cover;
+
 }
-.hebergement_marseille_panneau_conteneur_logement_vignette_img
-{
-border-radius: 10px 10px 0 0;
-}
+
 .hebergement_marseille_panneau_conteneur_logement_vignette_text
 {
     font-size: small;
@@ -358,6 +361,7 @@ border-radius: 10px 10px 0 0;
     width: 100%;
     height: 110px;
     border-radius: 10px 0 0 10px;
+    object-fit: cover;
 }
 .hebergement_populaire_panneau_conteneur_vignette_logement_text
 {
@@ -427,6 +431,7 @@ border-radius: 10px 10px 0 0;
     width:100%;
     height:300px;
     border-radius: 10px 10px 0 0;
+    object-fit: cover;
 }
 .actmarseille_panneau_conteneur_text
 {
@@ -466,6 +471,7 @@ border-radius: 10px 10px 0 0;
     width: 100%;
     height: 140px;
     border-radius: 10px 10px 0 0;
+    object-fit: cover;
 }
 .actmarseille_panneau_conteneur2_2_text
 {
@@ -491,6 +497,7 @@ border-radius: 10px 10px 0 0;
     width: 100%;
     height: 120px;
     border-radius: 10px 10px 0 0;
+    object-fit: cover;
 }
 
 
