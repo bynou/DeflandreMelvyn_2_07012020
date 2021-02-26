@@ -3,15 +3,10 @@
     src: url("polices/Raleway/static/Raleway-Regular.ttf") format("truetype");
 
 }
-@font-face{
-    font-family: "ralewaybold";
-    src: url("polices/Raleway/static/Raleway-ExtraBold.ttf") format("truetype");
 
-}
 @font-face {
-    font-family: "myFirstFont";
-    src: url("polices/Raleway/Raleway-Bold.ttf")format("truetype");
-    font-weight: bold;
+    font-family: "ralewaybold";
+    src: url("polices/Raleway/static/Raleway-Bold.ttf")format("truetype");
   }
 body{
     font-family:"ralewayregular";
@@ -21,6 +16,11 @@ body{
     
     background-color: #fcfcfc;
     
+}
+h1, h2
+{
+    font-family: "ralewaybold";
+    font-size: 1.1em;
 }
 header
 {
@@ -98,8 +98,8 @@ h1+p
 {
    
    
-    border-top:1px solid rgb(224, 224, 224);
-    border-bottom: 1px solid rgb(224, 224, 224);
+    border-top:1px solid rgb(235, 235, 235);
+    border-bottom: 1px solid rgb(235, 235, 235);
     
     
     
@@ -128,7 +128,7 @@ input:focus {
     
 }
 td.research_image{
-    background-color: rgb(215,215,215);
+    background-color: rgb(235, 235, 235);
     border-radius: 15px 0 0 15px;
     padding: 15px;
     
@@ -158,13 +158,14 @@ td.research_image{
 
 .filtre_text
 {
-    border:2px solid #c4c4c4;
+    border:2px solid rgb(235, 235, 235);
     padding: 13px;
     margin: auto;
     border-radius: 35px;
     text-indent:45px;
     transition: background-color 3s;
     text-decoration: none;
+    font-family: "ralewaybold";
     
 }
 .filtre_text:hover
@@ -239,7 +240,7 @@ td.research_image{
     
     width:65%;
     height:530px;
-    background-color:rgb(215,215,215);
+    background-color:rgb(235, 235, 235);
     border-radius: 25px;
     display: flex;
     flex-direction: column;
@@ -272,7 +273,7 @@ td.research_image{
 .hebergement_marseille_panneau_conteneur
 {
     width:30%;
-    height: 160px;
+    height: 150px;
     background-color: white;
     border-radius: 10px;
     
@@ -299,9 +300,13 @@ td.research_image{
 
 .hebergement_marseille_panneau_conteneur_logement_vignette_text
 {
-    font-size: small;
+    font-size: xx-small;
     margin-left:10px;
     margin-top: 8px;
+}
+.hebergement_marseille_panneau_conteneur_logement_vignette_text_titre
+{
+    font-family: "ralewaybold";
 }
 /*---------------------Panneau 2--------------------*/
 
@@ -309,7 +314,7 @@ td.research_image{
 {
     width:30%;
     height:530px;
-    background-color: rgb(215,215,215);
+    background-color: rgb(235, 235, 235);
     border-radius:25px;
    
 }
@@ -367,12 +372,16 @@ td.research_image{
 {
     width: 40%;
     margin: 5px;
-    font-size: small;
+    font-size: xx-small;
     display:flex;
     flex-direction: column;
     justify-content: space-around;
     
 
+}
+.hebergement_populaire_panneau_conteneur_vignette_logement_text_top_titre
+{
+    font-family: "ralewaybold";
 }
 .hebergement_populaire_panneau_conteneur_vignette_logement_text_top_prix
 {
@@ -383,6 +392,12 @@ td.research_image{
 
 
 /*---------------------------------footer du corps-----------------------------*/
+figcaption
+{
+    font-family: "ralewaybold";
+    font-size: 0.8em;
+}
+
 .actmarseille
 {
     margin:auto;
@@ -417,7 +432,7 @@ td.research_image{
     display: flex;
     flex-direction: column;
     border-radius: 10px;
-    box-shadow: 3px 3px 3px  rgb(215,215,215);
+    box-shadow: 3px 3px 3px  rgb(235, 235, 235);
 }
 .actmarseille_panneau_conteneur_vignette
 {
@@ -454,7 +469,7 @@ td.research_image{
     width: 100%;
     height: 180px;
     border-radius: 10px 10px 10px 10px;
-    box-shadow: 3px 3px 3px  rgb(215,215,215);
+    box-shadow: 3px 3px 3px  rgb(235, 235, 235);
     
 }
 .actmarseille_panneau_conteneur2_2_vignette
@@ -482,7 +497,7 @@ td.research_image{
     width: 100%;
     height: 120px;
     border-radius: 10px 10px 10px 10px;
-    box-shadow: 3px 3px 3px  rgb(215,215,215);
+    box-shadow: 3px 3px 3px  rgb(235, 235, 235);
 }
 .actmarseille_panneau_conteneur2_2bis_vignette
 {
@@ -510,9 +525,15 @@ footer
 {
     width: 100%;
     height: 150px;
-    background-color: rgb(215,215,215);
+    background-color: rgb(235, 235, 235);
     display:flex;
 }
+h3
+{
+    font-family: "ralewaybold";
+    font-size: 1em;
+}
+
 .informations
 {
     width:90%;
@@ -536,4 +557,6 @@ ul{
 padding: 0;}
 li{list-style-position: outside;
     list-style:none;
+    line-height: 1.7em;
+    font-size: 0.8em;
    ;}
