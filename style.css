@@ -1,0 +1,532 @@
+@font-face{
+    font-family: "Ralewayvariable";
+    src: url("polices/Raleway/Raleway-VariableFont_wght.ttf") format("truetype");
+
+}
+@font-face {
+    font-family: myFirstFont;
+    src: url("polices/Raleway/Raleway-Bold.ttf")format("truetype");
+    font-weight: bold;
+  }
+body{
+    font-family:"ralewayvariable";
+  
+    margin-top: 0px;
+    margin:0;
+    
+    background-color: #fcfcfc;
+    
+}
+header
+{
+
+height:65px;
+}
+/*--------header---------*/
+
+figure
+{
+    float:left;
+    padding-top: 40px;
+}
+.imageflotante
+{
+    margin-left:20px;
+}
+
+table.navigation
+{
+    display:flex;
+    justify-content: flex-end;
+    
+    border-collapse: collapse;
+    
+}
+
+/*--------Celules du tableau de navigation----*/
+td.lol
+{   
+    display:inline-block;
+    
+    color: #0065FC;
+    width: 150px;
+    height: 45px;
+    text-align: center;
+    padding-top: 50px;
+    border-top:1.5px solid transparent;
+}
+td.lol:hover
+{
+    border-top-color: #0065FC;
+    
+}
+a
+{
+    text-decoration:none;
+    
+}
+a:visited{color:rgb(127, 176, 250 );}
+
+
+
+/*--------moteur de recherche------*/
+.recherche
+{
+    
+    width: 90%;
+    margin:auto;
+    
+    
+}
+h1
+{
+    clear:both;
+    padding-top: 0/*20*/px;
+    color: rgb(0,0,0)
+}
+h1+p
+{
+    color:rgba(0, 0, 0, 0.7);
+}
+
+.research_input
+{
+   
+   
+    border-top:1px solid rgb(224, 224, 224);
+    border-bottom: 1px solid rgb(224, 224, 224);
+    
+    
+    
+   
+    
+}
+/*--------enlever border bleu sur form text--------*/
+.research
+{
+    border:0;
+    border-collapse: collapse;
+}
+input:focus {
+    outline: none;
+    
+}
+
+.research_bouton
+{
+    border-radius: 0 15px 15px 0;
+    color:white;
+    background-color: #0065FC;
+    border-radius:px;
+    padding: 15px;
+    
+    
+}
+td.research_image{
+    background-color: rgb(215,215,215);
+    border-radius: 15px 0 0 15px;
+    padding: 15px;
+    
+}
+
+/*----------------------Filtres----------------------*/
+
+.filtre
+{
+    display:flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    font-weight: bold;
+    
+    margin-top: 30px;
+
+    
+}
+.filtre_conteneur
+{
+
+    display:flex;
+    
+}
+
+
+.filtre_text
+{
+    border:2px solid #c4c4c4;
+    padding: 13px;
+    margin: auto;
+    border-radius: 35px;
+    text-indent:45px;
+    transition: background-color 3s;
+    text-decoration: none;
+    
+}
+.filtre_text:hover
+{
+    background-color: #0065FC;
+}
+
+
+.filtre_icon
+{
+    /*fond bleu*/
+    width: 50px;
+    height: 50px;
+    background: #DEEBFF;
+    border-radius: 50%;
+    color:#0065FC;
+    
+    /*position de l'icon*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    left:-1px;
+}
+.filtre_eco
+{
+    position:relative;
+    margin-left: 20px;
+}
+.filtre_fam
+{
+    position:relative;
+    margin-left: 15px;
+}
+.filtre_rom
+{
+    position:relative;
+    margin-left: 13px;
+}
+.filtre_anim
+{
+    position:relative;
+    margin-left: 20px;
+}
+
+
+/*---------------------------Ligne info---------*/
+.infotableau
+{   
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.infotableau_text
+{
+    color:rgb(131, 131, 131);
+}
+/*---------------------------Logements Marseille/pop TOP-------------------*/
+
+
+.hebergement
+{
+    width: 90%;
+    margin: auto;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+.hebergement_marseille{
+    
+    width:65%;
+    height:530px;
+    background-color:rgb(215,215,215);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.hebergement_marseille_titre
+{
+    width: 90%;
+    height: 53px;
+    margin: auto;
+    margin-top: 30px;
+}
+.stars
+{
+    color:#0065FC;
+}
+/*-------------------Panneau 1----------------*/
+.hebergement_marseille_panneau
+{
+    width:90%;
+    height:424px;
+    
+    margin: auto;
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.hebergement_marseille_panneau_conteneur
+{
+    width:30%;
+    height: 160px;
+    background-color: white;
+    border-radius: 10px;
+    
+    
+}
+.hebergement_marseille_panneau_conteneur_logement
+{
+    margin:5px;
+}
+.hebergement_marseille_panneau_conteneur_logement_vignette
+{
+   
+    overflow: hidden;
+    object-fit: contain;
+    
+}
+.hebergement_marseille_panneau_conteneur_logement_vignette_img
+{
+width:100%;
+height:95px;
+border-radius: 10px 10px 0 0;
+}
+.hebergement_marseille_panneau_conteneur_logement_vignette_img
+{
+border-radius: 10px 10px 0 0;
+}
+.hebergement_marseille_panneau_conteneur_logement_vignette_text
+{
+    font-size: small;
+    margin-left:10px;
+    margin-top: 8px;
+}
+/*---------------------Panneau 2--------------------*/
+
+.hebergement_populaire
+{
+    width:30%;
+    height:530px;
+    background-color: rgb(215,215,215);
+    border-radius:25px;
+   
+}
+.hebergement_populaire_titre
+{
+    display:flex;
+    justify-content: space-between;
+    width:80%;
+    margin: auto;
+    height: 53px;
+    margin-top:12px;
+}
+
+.hebergement_populaire_panneau
+{
+    width: 80%;
+    height:450px;
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+
+.hebergement_populaire_panneau_conteneur
+{
+    width:100%;
+    height:120px;
+    background-color: white;
+    border-radius: 10px;
+    display:flex;
+    
+    
+}
+
+.hebergement_populaire_panneau_conteneur_logement_vignette
+{
+    width:40%;
+    height: 120px;
+    overflow: hidden;
+    object-fit: contain;
+    margin:5px;
+    
+
+    
+}
+.hebergement_populaire_panneau_conteneur_logement_vignette_img
+{
+    width: 100%;
+    height: 110px;
+    border-radius: 10px 0 0 10px;
+}
+.hebergement_populaire_panneau_conteneur_vignette_logement_text
+{
+    width: 40%;
+    margin: 5px;
+    font-size: small;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+
+}
+.hebergement_populaire_panneau_conteneur_vignette_logement_text_top_prix
+{
+    margin-top: 5px;
+}
+
+
+
+
+/*---------------------------------footer du corps-----------------------------*/
+.actmarseille
+{
+    margin:auto;
+    margin-top: 45px;
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    height:450px;
+    
+    
+}
+.actmarseille_titre
+{
+    width: 90%;
+    margin: auto;
+}
+
+.actmarseille_panneau
+{
+    width:90%;
+    height:400px;
+    
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+.actmarseille_panneau_conteneur
+{
+    width:23%;
+    height:330px;
+    
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px  rgb(215,215,215);
+}
+.actmarseille_panneau_conteneur_vignette
+{
+    width:100%;
+    height:300px;
+    overflow: hidden;
+    overflow: contain;
+}
+.actmarseille_panneau_conteneur_vignette_img
+{
+    width:100%;
+    height:300px;
+    border-radius: 10px 10px 0 0;
+}
+.actmarseille_panneau_conteneur_text
+{
+    margin: 10px;
+}
+/*-------------------------------Panneau activité 2/bis --------------------*/
+
+.actmarseille_panneau_conteneur2
+{
+    width:23%;
+    height:330px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.actmarseille_panneau_conteneur2_2
+{
+    width: 100%;
+    height: 180px;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 3px 3px 3px  rgb(215,215,215);
+    
+}
+.actmarseille_panneau_conteneur2_2_vignette
+{
+    width: 100%;
+    height: 140px;
+    overflow: hidden;
+    overflow: contain;
+
+    
+}
+.actmarseille_panneau_conteneur2_2_vignette_img
+{
+    width: 100%;
+    height: 140px;
+    border-radius: 10px 10px 0 0;
+}
+.actmarseille_panneau_conteneur2_2_text
+{
+    margin: 10px;
+}
+.actmarseille_panneau_conteneur2_2bis
+{
+    width: 100%;
+    height: 120px;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 3px 3px 3px  rgb(215,215,215);
+}
+.actmarseille_panneau_conteneur2_2bis_vignette
+{
+    width: 100%;
+    height: 85px;
+    overflow: hidden;
+    overflow: contain;
+    
+}
+.actmarseille_panneau_conteneur2_2bis_vignette_img
+{
+    width: 100%;
+    height: 120px;
+    border-radius: 10px 10px 0 0;
+}
+
+
+.actmarseille_panneau_conteneur2_2bis_text
+{
+    margin: 10px;
+}
+/*---------------------------------footer-----------------------------*/
+footer
+{
+    width: 100%;
+    height: 150px;
+    background-color: rgb(215,215,215);
+    display:flex;
+}
+.informations
+{
+    width:90%;
+    display:flex;
+    justify-content: space-between;
+    margin: auto;
+    
+}
+.informations_conteneur
+{
+    width: 78%;
+    display:flex;
+    justify-content: space-between;
+
+    
+}
+ul{
+    
+    margin:auto;
+
+padding: 0;}
+li{list-style-position: outside;
+    list-style:none;
+   ;}
