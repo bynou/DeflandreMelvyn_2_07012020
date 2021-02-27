@@ -24,43 +24,58 @@ h1, h2
 }
 header
 {
-
-height:65px;
+    width: 90%;
+    height:65px;
+    display: flex;
+    margin: auto;
+    flex-direction: row; 
+    justify-content: space-between;
+    
+    
 }
 /*--------header---------*/
 
 figure
 {
-    float:left;
-    padding-top: 40px;
+    /* 26/02 float:left;*/
+    /*padding-top: 40px;*/
+    margin: 0;
 }
 .imageflotante
 {
-    margin-left:20px;
+  /* 26/02 margin-left:20px;*/
+  margin-top: 20px;
 }
 
-table.navigation
+/* 26/02table.navigation 
 {
     display:flex;
     justify-content: flex-end;
     
     border-collapse: collapse;
     
+}*/
+nav
+{
+    display: flex;
+    width: 35%;
+    justify-content: space-between;
+    
 }
 
 /*--------Celules du tableau de navigation----*/
-td.lol
+.lol
 {   
     display:inline-block;
     
     color: #0065FC;
-    width: 150px;
-    height: 45px;
-    text-align: center;
-    padding-top: 50px;
     border-top:1.5px solid transparent;
+    line-height: 65px;
+    text-align: center;
+    /*width: 40%;*/
+    font-size: 0.9em;
 }
-td.lol:hover
+.lol:hover
 {
     border-top-color: #0065FC;
     
@@ -80,6 +95,7 @@ a:visited{color:rgb(127, 176, 250 );}
     
     width: 90%;
     margin:auto;
+    margin-top: 35px;
     
     
 }
@@ -219,11 +235,14 @@ td.research_image{
     margin: auto;
     margin-top: 20px;
     margin-bottom: 20px;
+    display: flex;
 }
+
 
 .infotableau_text
 {
     color:rgb(131, 131, 131);
+    margin-left: 10Px;
 }
 /*---------------------------Logements Marseille/pop TOP-------------------*/
 
