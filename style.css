@@ -60,7 +60,7 @@ nav
 {   
     display:inline-block;
     
-    color: rgb(127, 176, 250 );
+    
     border-top:1.5px solid transparent;
     line-height: 65px;
     text-align: center;
@@ -74,6 +74,7 @@ nav
 a
 {
     text-decoration:none;
+    color: rgb(127, 176, 250 );
     
 }
 a:visited{color:black);}
