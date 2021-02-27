@@ -60,7 +60,7 @@ nav
 {   
     display:inline-block;
     
-    color: #0065FC;
+    color: rgb(127, 176, 250 );
     border-top:1.5px solid transparent;
     line-height: 65px;
     text-align: center;
@@ -76,7 +76,7 @@ a
     text-decoration:none;
     
 }
-a:visited{color:rgb(127, 176, 250 );}
+a:visited{color:black);}
 
 
 
