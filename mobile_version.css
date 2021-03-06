@@ -1,0 +1,262 @@
+header
+{
+    flex-direction:column;
+    height: initial;
+    width: 100%;
+}
+figure
+{
+    margin-left: 25px;
+}
+nav
+{
+    width: 100%;
+    flex-wrap: wrap-reverse;
+    justify-content: flex-end;
+    position: absolute;
+
+}
+
+/*
+nav:nth-child(1)
+{
+    width: 50%;
+}
+nav:nth-child(2)
+{
+    width: 50%;
+} */
+.nav_1, .nav_2
+{
+    width: 50%;
+    border-bottom:2px solid rgb(235, 235, 235);
+  
+    
+}
+.nav_3
+{
+    border-color: transparent;
+}   
+.nav_1:hover
+{
+    border-bottom-color: #0065FC;
+    border-top-color: transparent;
+}
+.nav_2:hover
+{
+    border-bottom-color: #0065FC;
+    border-top-color: transparent;
+} 
+.nav_3:hover
+{
+    border-top-color: transparent;
+}
+.research
+{
+    width: 90%;
+    margin: auto;
+}
+.recherche
+{
+    margin-top: 85px;
+}
+.research_bouton_desktop
+{
+    display:none;
+}
+.research_bouton_mobil
+{
+    display: flex;
+}
+/* Filtres */
+.filtre_conteneur
+{
+    width: 100%;
+    flex-direction: column;
+    display: inline-block;
+}
+.filtre_vignette
+{
+    width: 100%;
+}
+.filtre_eco
+{
+    display: inline-block;
+    margin-left: 0;
+    margin-top:15px;
+}
+.filtre_fam
+{
+    display: inline-block;
+    margin-top:15px;
+    
+}
+.filtre_rom
+{
+    display: inline-block;
+    margin-left: 0;
+    margin-top:15px;
+}
+.filtre_anim
+{
+    display: inline-block;
+    margin-left: 0;
+    margin-top:15px;
+}
+
+/* Main*/
+.hebergement
+{
+    flex-direction: column-reverse;
+    width: 100%;
+}
+/*Panneau 2 */
+.hebergement_populaire
+{
+    width: 100%;
+    border-radius: 0;
+}
+.hebergement_populaire_panneau
+{
+    width: 90%;
+}
+.hebergement_populaire_panneau_conteneur
+{
+    height: 140px;
+}
+.hebergement_populaire_panneau_conteneur_logement_vignette
+{
+    height: 135px;
+}
+.hebergement_populaire_panneau_conteneur_logement_vignette_img
+{
+    height: 130px;
+}
+.hebergement_populaire_panneau_conteneur_vignette_logement_text
+{
+    font-size: small;
+}
+/*Panneau 1*/
+.hebergement_marseille
+{
+    width: 100%;
+    height: initial;
+    background-color: white;
+}
+.hebergement_marseille_display
+{
+    margin-top: 25px;
+}
+.hebergement_marseille_panneau
+{
+    height: initial;
+}
+.hebergement_marseille_panneau_conteneur
+{
+    width: 100%;
+    height: initial;
+    box-shadow: 3px 3px 3px  rgb(235, 235, 235);
+    margin-top: 15px;
+}
+.hebergement_marseille_panneau_conteneur_logement_vignette_text
+{
+    font-size: small;
+}
+.hebergement_marseille_panneau_conteneur_logement_vignette_img
+{
+    height: 120px;
+}
+
+/* Activité */
+.actmarseille
+{
+    margin-top: 15px;
+    height: initial;
+}
+.actmarseille_titre
+{
+    font-size: larger;
+}
+.actmarseille_panneau
+{
+    flex-direction: column;
+    height: initial;
+    
+}
+.actmarseille_panneau_conteneur
+{
+    width: 100%;
+    height: initial;
+    margin-top: 20px;
+}
+.actmarseille_panneau_conteneur_vignette
+{
+    height: initial;
+}
+.actmarseille_panneau_conteneur_vignette_img
+{
+    height: 120px;
+}
+.actmarseille_panneau_conteneur_text_description
+{
+    font-size:medium;
+    margin-bottom: 0;
+}
+.actmarseille_panneau_conteneur2
+{
+    width: 100%;
+    height: initial;
+    
+}
+.actmarseille_panneau_conteneur2_2
+{
+    width: 100%;
+    height: initial;
+    margin-top: 20px;
+}
+.actmarseille_panneau_conteneur2_2_vignette
+{
+    height: initial;
+}
+.actmarseille_panneau_conteneur2_2_vignette_img
+{
+    height: 120px;
+}
+.actmarseille_panneau_conteneur2_2bis
+{
+    width: 100%;
+    height: initial;
+    margin-top: 20px;
+}
+.actmarseille_panneau_conteneur2_2bis_vignette
+{
+    height: initial;
+}
+.actmarseille_panneau_conteneur2_2bis_vignette_img
+{
+    height: 120px;
+}
+/*FOOTER*/
+footer
+{
+    height: initial;
+    margin-top: 35px;
+}
+.informations_conteneur
+{
+    margin-top: 20px;
+    margin-bottom: 35px;
+}
+.informations_conteneur
+{
+    width: 100%;
+    flex-direction: column;
+}
+.informations_2
+{
+    margin-top: 20px;
+}
+.informations_3
+{
+    margin-top: 20px;
+}
