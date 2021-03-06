@@ -3,8 +3,10 @@
 <head>
     <meta charset="utf-8"/>
     <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" media="screen and (max-width: 991.98px)" href="mobile_version.css" />
     <title>V2Reservia - Projet II V2</title>
     <script src="https://kit.fontawesome.com/857dbf51f4.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
 </head>
 <body>
 
@@ -18,14 +20,16 @@
 
 
     <nav>
-        <div style="width: 40%;" class="lol">
-            <a href="#ancre1">Hébergements</a>
+        <div  class="nav_1">
+            <a class="nav_lien" href="#ancre1">Hébergements</a>
         </div>
-        <div style="width: 30%;" class="lol">
-            <a href="#ancre2">Activités</a>
+        <div  class="nav_2">
+            <a class="nav_lien" href="#ancre2">Activités</a>
         </div>
-        <div style="width: 30%;font-family: 'ralewaybold';" class="lol">
-            <a href="#"><b>S'inscrire</b></a>
+        <div class="nav_3">
+            <strong>
+            <a class="nav_sub" href="#"><b>S'inscrire</b></a>
+            </strong>
         </div>
     </nav>
 </header>
@@ -42,10 +46,10 @@
                     <td class="research_image" ><i class="fas fa-map-marker-alt"></i></td>
                     <td class="research_input" >
                         <form method="post" action="traitement.php">
-                        <input type="text" name="recherches" placeholder="Marseille, France" size="19" maxlength="25" style="width: 230px; height: 45px; font-size:1em; font-weight:700;margin:0;border:0;" />
+                        <input type="text" name="recherches" placeholder="Marseille, France" size="19" maxlength="25" style="width: 230px; height: 45px; font-size:1em; font-weight:700;margin:0;border:0; text-indent: 5px;" />
                         </form>  
                     </td>
-                    <td class="research_bouton"  ><a href="#">Rechercher</a></td>
+                    <td class="research_bouton"><span class="research_bouton_desktop"><a class="research_bouton_lien" href="#">Rechercher</a></span><span class="research_bouton_mobil"><a class="research_bouton_lien" href="#"><i class="fas fa-search"></i></a></span></td>
                 </tr>
             </table>
         
@@ -55,27 +59,29 @@
 
 <section class="filtre">
   <div class="filtre_conteneur">
-    <h4 style="font-family: 'ralewaybold';">Filtres</h4>
+    <h4>Filtres</h4>
+    
     <div class="filtre_eco">
         <div class="filtre_icon"><i class="fas fa-money-bill-wave"></i></div>
-        <div class="filtre_text">Économique</div>
+        <div class="filtre_text"><a class="filtre_text_lien" href="#">Économique</a></div>
     </div>
     
     <div class="filtre_fam">
         <div class="filtre_icon"><i class="fas fa-child"></i></div>
-        <div class="filtre_text">Familial</div>
+        <div class="filtre_text"><a class="filtre_text_lien" href="#">Familial</a></div>
     </div>
     
     <div class="filtre_rom">
         <div class="filtre_icon"><i class="fas fa-heart"></i></div>
-        <div class="filtre_text">Romantique</div>
+        <div class="filtre_text"><a class="filtre_text_lien" href="#">Romantique</a></div>
     </div>
     
     <div class="filtre_anim">
         <div class="filtre_icon"><i class="fas fa-dog"></i></div>
-        <div class="filtre_text">Animaux autorisés</div>
+        <div class="filtre_text"><a class="filtre_text_lien" href="#">Animaux autorisés</a></div>
     </div>
   </div>
+  
 </section>
 
 
@@ -100,12 +106,16 @@
             <div class="hebergement_marseille_panneau_conteneur">
                 <div class="hebergement_marseille_panneau_conteneur_logement">
                     <div class="hebergement_marseille_panneau_conteneur_logement_vignette">
-                        <img  class="hebergement_marseille_panneau_conteneur_logement_vignette_img" src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="logement">
+                        <a class="hebergement_marseille_panneau_conteneur_logement_vignette_lien" href="images/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg" target="_blank">
+                            <img  class="hebergement_marseille_panneau_conteneur_logement_vignette_img" src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la cannebière">
+                        </a>
                     </div>
                     <div class="hebergement_marseille_panneau_conteneur_logement_vignette_text">
+                        <a class="hebergement_marseille_panneau_conteneur_logement_vignette_text_lien" href="#">
                         <span class="hebergement_marseille_panneau_conteneur_logement_vignette_text_titre"><strong>Auberge la Cannebière</strong></span><br>
-                        <span>Nuit à partir de <strong style="font-family: 'ralewaybold';">25€</strong></span><br>
-                        <span class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></span>    
+                        <span>Nuit à partir de <strong>25€</strong></span><br>
+                        <span class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></span>
+                        </a>    
                     </div>
                 </div>
             </div>
@@ -114,65 +124,85 @@
             <div class="hebergement_marseille_panneau_conteneur"> 
                 <div class="hebergement_marseille_panneau_conteneur_logement">
                     <div class="hebergement_marseille_panneau_conteneur_logement_vignette">
-                        <img  class="hebergement_marseille_panneau_conteneur_logement_vignette_img" src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="logement">
+                        <a class="hebergement_marseille_panneau_conteneur_logement_vignette_lien" href="images/hebergements/1_xlarge/fred-kleber-gTbaxaVLvsg-unsplash.jpg" target="_blank">
+                            <img  class="hebergement_marseille_panneau_conteneur_logement_vignette_img" src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du port">
+                        </a>
                     </div>
                 <div class="hebergement_marseille_panneau_conteneur_logement_vignette_text">
+                    <a class="hebergement_marseille_panneau_conteneur_logement_vignette_text_lien" href="#">
                         <span class="hebergement_marseille_panneau_conteneur_logement_vignette_text_titre"><strong>Hôtel du port</strong></span><br>
-                        <span>Nuit à partir de <strong style="font-family: 'ralewaybold';">52€</strong></span><br>
+                        <span>Nuit à partir de <strong>52€</strong></span><br>
                         <span class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>    
+                    </a>
                     </div>
                 </div>
             </div>
             <div class="hebergement_marseille_panneau_conteneur">
                 <div class="hebergement_marseille_panneau_conteneur_logement">
                     <div class="hebergement_marseille_panneau_conteneur_logement_vignette">
-                        <img  class="hebergement_marseille_panneau_conteneur_logement_vignette_img" src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="logement">
+                        <a class="hebergement_marseille_panneau_conteneur_logement_vignette_lien" href="images/hebergements/1_xlarge/reisetopia-B8WIgxA_PFU-unsplash.jpg" target="_blank">
+                            <img  class="hebergement_marseille_panneau_conteneur_logement_vignette_img" src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hôtel les mouettes">
+                        </a>
                     </div>
                     <div class="hebergement_marseille_panneau_conteneur_logement_vignette_text">
+                    <a class="hebergement_marseille_panneau_conteneur_logement_vignette_text_lien" href="#">
                         <span class="hebergement_marseille_panneau_conteneur_logement_vignette_text_titre"><strong>Hôtel les mouettes</strong></span><br>
-                        <span>Nuit à partir de <strong style="font-family: 'ralewaybold';">76€</strong></span><br>
+                        <span>Nuit à partir de <strong>76€</strong></span><br>
                         <span class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></span>    
+                    </a>
                     </div>
                 </div>
             </div>
             <div class="hebergement_marseille_panneau_conteneur">
                 <div class="hebergement_marseille_panneau_conteneur_logement">
                     <div class="hebergement_marseille_panneau_conteneur_logement_vignette">
-                        <img  class="hebergement_marseille_panneau_conteneur_logement_vignette_img" src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="logement">
+                        <a class="hebergement_marseille_panneau_conteneur_logement_vignette_lien" href="images/hebergements/1_xlarge/annie-spratt-Eg1qcIitAuA-unsplash.jpg" target="_blank">
+                            <img  class="hebergement_marseille_panneau_conteneur_logement_vignette_img" src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hôtel de la mer">
+                        </a>        
                     </div>
                     <div class="hebergement_marseille_panneau_conteneur_logement_vignette_text">
+                    <a class="hebergement_marseille_panneau_conteneur_logement_vignette_text_lien" href="#">
                         <span class="hebergement_marseille_panneau_conteneur_logement_vignette_text_titre"><strong>Hôtel de la mer</strong></span><br>
-                        <span>Nuit à partir de <strong style="font-family: 'ralewaybold';">46€</strong></span><br>
+                        <span>Nuit à partir de <strong>46€</strong></span><br>
                         <span class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></span>    
+                    </a>
                     </div>
                 </div>
             </div>
             <div class="hebergement_marseille_panneau_conteneur">
                 <div class="hebergement_marseille_panneau_conteneur_logement">
                     <div class="hebergement_marseille_panneau_conteneur_logement_vignette">
-                        <img  class="hebergement_marseille_panneau_conteneur_logement_vignette_img" src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="logement">
+                        <a class="hebergement_marseille_panneau_conteneur_logement_vignette_lien" href="images/hebergements/1_xlarge/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" target="_blank">    
+                            <img  class="hebergement_marseille_panneau_conteneur_logement_vignette_img" src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge le panier">
+                        </a>
                     </div>
                     <div class="hebergement_marseille_panneau_conteneur_logement_vignette_text">
+                    <a class="hebergement_marseille_panneau_conteneur_logement_vignette_text_lien" href="#"> 
                         <span class="hebergement_marseille_panneau_conteneur_logement_vignette_text_titre"><strong>Auberge Le panier</strong></span><br>
-                        <span>Nuit à partir de <strong style="font-family: 'ralewaybold';">23€</strong></span><br>
+                        <span>Nuit à partir de <strong>23€</strong></span><br>
                         <span class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></span>    
+                    </a>
                     </div>
                 </div>
             </div>
             <div class="hebergement_marseille_panneau_conteneur">
                 <div class="hebergement_marseille_panneau_conteneur_logement">
                     <div class="hebergement_marseille_panneau_conteneur_logement_vignette">
-                        <img  class="hebergement_marseille_panneau_conteneur_logement_vignette_img" src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="logement">
+                        <a class="hebergement_marseille_panneau_conteneur_logement_vignette_lien" href="images/hebergements/1_xlarge/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" target="_blank">
+                            <img  class="hebergement_marseille_panneau_conteneur_logement_vignette_img" src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hôtel chez amina">
+                        </a>
                     </div>
                     <div class="hebergement_marseille_panneau_conteneur_logement_vignette_text">
+                        <a class="hebergement_marseille_panneau_conteneur_logement_vignette_text_lien" href="#"> 
                         <span class="hebergement_marseille_panneau_conteneur_logement_vignette_text_titre"><strong>Hôtel chez Amina</strong></span><br>
-                        <span>Nuit à partir de <strong style="font-family: 'ralewaybold';">96€</strong></span><br>
+                        <span>Nuit à partir de <strong>96€</strong></span><br>
                         <span class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>    
+                    </a> 
                     </div>
                 </div>
             </div>
         </div>
-        <p style="width: 90%;height: 53px;margin: auto;font-family: 'ralewaybold';"><strong>Afficher plus</strong></p>
+        <p class="hebergement_marseille_display"><a class="hebergement_marseille_display_lien" href="#"><strong>Afficher plus</strong></a></p>
     </article>
 <!--Panneau 2-->
 
@@ -185,12 +215,16 @@
             <div class="hebergement_populaire_panneau_conteneur">
                 
                     <div class="hebergement_populaire_panneau_conteneur_logement_vignette">
-                      <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" class="hebergement_populaire_panneau_conteneur_logement_vignette_img" alt="logement">
+                      <a href="images/hebergements/1_xlarge/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" target="_blank">  
+                        <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" class="hebergement_populaire_panneau_conteneur_logement_vignette_img" alt="Hôtel le soleil du matin">
+                      </a>
                     </div>
                     <div class="hebergement_populaire_panneau_conteneur_vignette_logement_text">
-                        <div class="hebergement_populaire_panneau_conteneur_vignette_logement_text_top">   
+                        <div class="hebergement_populaire_panneau_conteneur_vignette_logement_text_top">
+                            <a class="hebergement_populaire_panneau_conteneur_vignette_logement_text_top_lien" href="#">   
                             <span class="hebergement_populaire_panneau_conteneur_vignette_logement_text_top_titre"><strong>Hôtel Le soleil du matin</strong></span>
-                            <p class="hebergement_populaire_panneau_conteneur_vignette_logement_text_top_prix">Nuit à partir de <strong style="font-size: 0.9em;font-family: 'ralewaybold';">128€</strong></p>
+                            <p class="hebergement_populaire_panneau_conteneur_vignette_logement_text_top_prix">Nuit à partir de <strong style="font-size: 0.9em;">128€</strong></p>
+                            </a>
                         </div>
                         <div class="hebergement_populaire_panneau_conteneur_vignette_logement_text_bot">
                             <span class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
@@ -204,12 +238,16 @@
             <div class="hebergement_populaire_panneau_conteneur">
                 
                 <div class="hebergement_populaire_panneau_conteneur_logement_vignette">
-                    <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" class="hebergement_populaire_panneau_conteneur_logement_vignette_img" alt="logement">
+                    <a href="images/hebergements/1_xlarge/aw-creative-VGs8z60yT2c-unsplash.jpg" target="_blank">
+                        <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" class="hebergement_populaire_panneau_conteneur_logement_vignette_img" alt="Au coeur de l'eau Chambre d'hôtes">
+                    </a>
                 </div>
                 <div class="hebergement_populaire_panneau_conteneur_vignette_logement_text">
                     <div class="hebergement_populaire_panneau_conteneur_vignette_logement_text_top">   
+                        <a class="hebergement_populaire_panneau_conteneur_vignette_logement_text_top_lien" href="#">
                         <span class="hebergement_populaire_panneau_conteneur_vignette_logement_text_top_titre"><strong>Au coeur de l'eau Chambres d'hôtes</strong></span>
-                        <p class="hebergement_populaire_panneau_conteneur_vignette_logement_text_top_prix">Nuit à partir de <strong style="font-family: 'ralewaybold';">71€</strong></p>
+                        <p class="hebergement_populaire_panneau_conteneur_vignette_logement_text_top_prix">Nuit à partir de <strong>71€</strong></p>
+                        </a>
                     </div>
                     <div class="hebergement_populaire_panneau_conteneur_vignette_logement_text_bot">
                         <span class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></span>
@@ -222,12 +260,16 @@
             <div class="hebergement_populaire_panneau_conteneur">
                 
                 <div class="hebergement_populaire_panneau_conteneur_logement_vignette">
-                    <img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" class="hebergement_populaire_panneau_conteneur_logement_vignette_img" alt="logement">
+                    <a href="images/hebergements/1_xlarge/febrian-zakaria-sjvU0THccQA-unsplash.jpg" target="_blank">
+                        <img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" class="hebergement_populaire_panneau_conteneur_logement_vignette_img" alt="Hôtel tout bleu et blanc">
+                    </a>
                 </div>
                 <div class="hebergement_populaire_panneau_conteneur_vignette_logement_text">
                     <div class="hebergement_populaire_panneau_conteneur_vignette_logement_text_top">   
+                        <a class="hebergement_populaire_panneau_conteneur_vignette_logement_text_top_lien" href="#">
                         <span class="hebergement_populaire_panneau_conteneur_vignette_logement_text_top_titre"><strong>Hôtel Tout bleu et Blanc</strong></span>
-                        <p class="hebergement_populaire_panneau_conteneur_vignette_logement_text_top_prix">Nuit à partir de <strong style="font-family: 'ralewaybold';">68€</strong></p>
+                        <p class="hebergement_populaire_panneau_conteneur_vignette_logement_text_top_prix">Nuit à partir de <strong>68€</strong></p>
+                        </a>    
                     </div>
                     <div class="hebergement_populaire_panneau_conteneur_vignette_logement_text_bot">
                         <span class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></span>
@@ -250,10 +292,12 @@
         
         <div class="actmarseille_panneau_conteneur">
             <div class="actmarseille_panneau_conteneur_vignette">
-                <img class="actmarseille_panneau_conteneur_vignette_img" src="images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="activite">
+                <a href="images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" target="_blank">
+                    <img class="actmarseille_panneau_conteneur_vignette_img" src="images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="vieux port">
+                </a>
             </div>
             <div class="actmarseille_panneau_conteneur_text">
-                <p class="actmarseille_panneau_conteneur_text_description"><strong>Vieux Port</strong></p>
+                <p class="actmarseille_panneau_conteneur_text_description"><a class="actmarseille_panneau_conteneur_text_description_lien" href="#"><strong>Vieux Port</strong></a></p>
             </div>
         </div>
         
@@ -261,19 +305,23 @@
         <div class="actmarseille_panneau_conteneur2">
             <div class="actmarseille_panneau_conteneur2_2">
                 <div class="actmarseille_panneau_conteneur2_2_vignette">
-                    <img class="actmarseille_panneau_conteneur2_2_vignette_img" src="images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="activite">
+                    <a href="images/activites/1_xlarge/paul-hermann-QFTrLdQIRhI-unsplash.jpg" target="_blank">
+                        <img class="actmarseille_panneau_conteneur2_2_vignette_img" src="images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues">
+                    </a>
                 </div>
                 <div class="actmarseille_panneau_conteneur2_2_text">
-                    <p class="actmarseille_panneau_conteneur_text_description"><strong>Fort de Pomègues</strong></p>
+                    <p class="actmarseille_panneau_conteneur_text_description"><a class="actmarseille_panneau_conteneur_text_description_lien" href="#"><strong>Fort de Pomègues</strong></a></p>
                 </div>
 
             </div>
             <div class="actmarseille_panneau_conteneur2_2bis">
                 <div class="actmarseille_panneau_conteneur2_2bis_vignette">
-                    <img class="actmarseille_panneau_conteneur2_2bis_vignette_img" src="images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="activite">
+                    <a href="images/activites/1_xlarge/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" target="_blank">
+                        <img class="actmarseille_panneau_conteneur2_2bis_vignette_img" src="images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Îles du frioul">
+                    </a>
                 </div>
                 <div class="actmarseille_panneau_conteneur2_2bis_text">
-                    <p class="actmarseille_panneau_conteneur_text_description"><strong>Îles du Frioul</strong></p>
+                    <p class="actmarseille_panneau_conteneur_text_description"><a class="actmarseille_panneau_conteneur_text_description_lien" href="#"><strong>Îles du Frioul</strong></a></p>
 
                 </div>
             </div>
@@ -283,28 +331,34 @@
         
         <div class="actmarseille_panneau_conteneur">
             <div class="actmarseille_panneau_conteneur_vignette">
-                <img class="actmarseille_panneau_conteneur_vignette_img" src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="activite">
+                <a href="images/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" target="_blank">
+                    <img class="actmarseille_panneau_conteneur_vignette_img" src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc nationale des calanques">
+                </a>
             </div>
             <div class="actmarseille_panneau_conteneur_text">
-                <p class="actmarseille_panneau_conteneur_text_description"><strong>Parc Nationale des Calanques</strong></p>
+                <p class="actmarseille_panneau_conteneur_text_description"><a class="actmarseille_panneau_conteneur_text_description_lien" href="#"><strong>Parc Nationale des Calanques</strong></a></p>
             </div>
         </div>
         <div class="actmarseille_panneau_conteneur2">
             <div class="actmarseille_panneau_conteneur2_2bis">
                 <div class="actmarseille_panneau_conteneur2_2bis_vignette">
-                    <img class="actmarseille_panneau_conteneur2_2bis_vignette_img" src="images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="activite">
+                    <a href="images/activites/1_xlarge/florian-wehde-xW9e8gdotxI-unsplash.jpg" target="_blank">
+                        <img class="actmarseille_panneau_conteneur2_2bis_vignette_img" src="images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-dame-de-la-garde">
+                    </a>
                 </div>
                 <div class="actmarseille_panneau_conteneur2_2bis_text">
-                    <p class="actmarseille_panneau_conteneur_text_description"><strong>Notre-Dame-de-la-garde</strong></p>
+                    <p class="actmarseille_panneau_conteneur_text_description"><a class="actmarseille_panneau_conteneur_text_description_lien" href="#"><strong>Notre-Dame-de-la-garde</strong></a></p>
                 </div>
 
             </div>
             <div class="actmarseille_panneau_conteneur2_2">
                 <div class="actmarseille_panneau_conteneur2_2_vignette">
-                    <img class="actmarseille_panneau_conteneur2_2_vignette_img" src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="activite">
+                    <a href="images/activites/1_xlarge/lena-paulin-wH2-EJoDcV0-unsplash.jpg" target="_blank">
+                        <img class="actmarseille_panneau_conteneur2_2_vignette_img" src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp">
+                    </a>
                 </div>
                 <div class="actmarseille_panneau_conteneur2_2_text">
-                    <p class="actmarseille_panneau_conteneur_text_description"><strong>Parc Longchamp</strong></p>
+                    <p class="actmarseille_panneau_conteneur_text_description"><a class="actmarseille_panneau_conteneur_text_description_lien" href="#"><strong>Parc Longchamp</strong></a></p>
                 </div>
             </div>
         </div>
@@ -321,24 +375,24 @@
             <section class="informations_1">
                 <h3>A propos</h3>
                 <ul>
-                    <li>Fonctionnement du site</li>
-                    <li>Conditions générales de vente</li>
-                    <li>Données et confidentialité</li>
+                    <li><a class="information_lien" href="#">Fonctionnement du site</a></li>
+                    <li><a class="information_lien" href="#">Conditions générales de vente</a></li>
+                    <li><a class="information_lien" href="#">Données et confidentialité</a></li>
                 </ul>
             </section>
             <section class="informations_2">
                 <h3>Nos hébergements</h3>
                 <ul>
-                    <li>Charte qualité</li>
-                    <li>Soumettre votre hôtel</li>
+                    <li><a class="information_lien" href="#">Charte qualité</a></li>
+                    <li><a class="information_lien" href="#">Soumettre votre hôtel</a></li>
 
                 </ul>
             </section>
             <section class="informations_3">
                 <h3>Assistance</h3>
                 <ul>
-                    <li>Centre d'aide</li>
-                    <li>Nous contacter</li>
+                    <li><a class="information_lien" href="#">Centre d'aide</a></li>
+                    <li><a class="information_lien" href="#">Nous contacter</a></li>
                 </ul>
             </section>
     
