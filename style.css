@@ -1,12 +1,15 @@
 @font-face{
     font-family: "ralewayregular";
     src: url("polices/Raleway/static/Raleway-Regular.ttf") format("truetype");
-
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-    font-family: "ralewaybold";
-    src: url("polices/Raleway/static/Raleway-Bold.ttf")format("truetype");
+    font-family: "ralewayregular";
+    src: url("polices/Raleway/static/Raleway-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
   }
 body{
     font-family:"ralewayregular";
@@ -17,10 +20,10 @@ body{
     background-color: #fcfcfc;
     
 }
-h1, h2
+h1, h2, h4
 {
-    font-family: "ralewaybold";
     font-size: 1.1em;
+    font-weight: bold;
 }
 header
 {
@@ -33,11 +36,15 @@ header
     
     
 }
+strong
+{
+    font-weight: bold;
+}
 /*--------header---------*/
 
 figure
 {
-   
+    float:left;
     margin: 0;
 }
 .imageflotante
@@ -56,28 +63,58 @@ nav
 }
 
 /*--------Celules du tableau de navigation----*/
-.lol
+/*nav:nth-child(1)
+{
+    width: 40%;
+}
+nav:nth-child(2)
+{
+    width: 30%;
+}
+nav:nth-child(3)
+{
+    width: 30%;
+}*/
+.nav_1, .nav_2, .nav_3
 {   
     display:inline-block;
     
-    
+    width: 33%;
     border-top:1.5px solid transparent;
     line-height: 65px;
     text-align: center;
     font-size: 0.9em;
+    color:#0065FC;
 }
-.lol:hover
+.nav_1:hover
+{
+    border-top-color: #0065FC;
+    
+    
+}
+.nav_2:hover
 {
     border-top-color: #0065FC;
     
 }
-a
+.nav_3:hover
 {
-    text-decoration:none;
-    color: rgb(127, 176, 250 );
+    border-top-color: #0065FC;
     
 }
-a:visited{color:black);}
+.nav_lien
+{
+    text-decoration:none;
+    color:#0065FC;
+    
+}
+.nav_lien:visited{color:rgb(131, 131, 131);}
+
+.nav_sub
+{
+    text-decoration:none;
+    color: #0065FC;
+}
 
 
 
@@ -140,6 +177,15 @@ td.research_image{
     padding: 15px;
     
 }
+.research_bouton_mobil
+{
+    display: none;
+}
+.research_bouton_lien
+{
+    text-decoration: none;
+    color: white;
+}
 
 /*----------------------Filtres----------------------*/
 
@@ -170,9 +216,9 @@ td.research_image{
     margin: auto;
     border-radius: 35px;
     text-indent:45px;
-    transition: background-color 3s;
+    transition: background-color 2s;
     text-decoration: none;
-    font-family: "ralewaybold";
+    font-weight: bold;
     
 }
 .filtre_text:hover
@@ -217,7 +263,14 @@ td.research_image{
     position:relative;
     margin-left: 20px;
 }
-
+.filtre_text_lien
+{
+    text-decoration: none;
+}
+.filtre_text_lien:visited
+{
+    color: #61a0ff;
+}
 
 /*---------------------------Ligne info---------*/
 .infotableau
@@ -245,6 +298,21 @@ td.research_image{
     display:flex;
     flex-direction:row;
     justify-content: space-between;
+}
+.hebergement_marseille_display
+{
+    width: 90%;
+    height: 53px;
+    margin: auto;
+    font-weight: bold;
+}
+.hebergement_marseille_display_lien
+{
+    text-decoration: none;
+}
+.hebergement_marseille_display_lien:visited
+{
+    color: black;
 }
 .hebergement_marseille{
     
@@ -314,9 +382,18 @@ td.research_image{
     margin-left:10px;
     margin-top: 8px;
 }
+.hebergement_marseille_panneau_conteneur_logement_vignette_text_lien
+{
+    text-decoration: none;
+}
+.hebergement_marseille_panneau_conteneur_logement_vignette_text_lien:visited
+{
+color: black;
+}
+
 .hebergement_marseille_panneau_conteneur_logement_vignette_text_titre
 {
-    font-family: "ralewaybold";
+    font-weight: bold;
 }
 /*---------------------Panneau 2--------------------*/
 
@@ -389,9 +466,17 @@ td.research_image{
     
 
 }
+.hebergement_populaire_panneau_conteneur_vignette_logement_text_top_lien
+{
+    text-decoration: none;
+}
+.hebergement_populaire_panneau_conteneur_vignette_logement_text_top_lien:visited
+{
+    color: black;
+}
 .hebergement_populaire_panneau_conteneur_vignette_logement_text_top_titre
 {
-    font-family: "ralewaybold";
+    font-weight: bold;
 }
 .hebergement_populaire_panneau_conteneur_vignette_logement_text_top_prix
 {
@@ -404,10 +489,17 @@ td.research_image{
 /*---------------------------------footer du corps-----------------------------*/
 .actmarseille_panneau_conteneur_text_description
 {
-    font-family: "ralewaybold";
+    font-weight: bold;
     font-size: 0.8em;
 }
-
+.actmarseille_panneau_conteneur_text_description_lien
+{
+    text-decoration: none;
+}
+.actmarseille_panneau_conteneur_text_description_lien:visited
+{
+    color: black;
+}
 .actmarseille
 {
     margin:auto;
@@ -460,7 +552,7 @@ td.research_image{
 }
 .actmarseille_panneau_conteneur_text
 {
-    margin: 10px;
+    text-indent: 10px;
 }
 /*-------------------------------Panneau activité 2/bis --------------------*/
 
@@ -540,7 +632,7 @@ footer
 }
 h3
 {
-    font-family: "ralewaybold";
+    font-weight: bold;
     font-size: 1em;
 }
 
@@ -559,6 +651,14 @@ h3
     justify-content: space-between;
 
     
+}
+.information_lien
+{
+    text-decoration: none;
+}
+.information_lien:visited
+{
+    color: black;
 }
 ul{
     
