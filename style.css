@@ -266,6 +266,7 @@ td.research_image{
 .filtre_text_lien
 {
     text-decoration: none;
+    color: black;
 }
 .filtre_text_lien:visited
 {
@@ -309,6 +310,7 @@ td.research_image{
 .hebergement_marseille_display_lien
 {
     text-decoration: none;
+    color: black;
 }
 .hebergement_marseille_display_lien:visited
 {
@@ -385,6 +387,7 @@ td.research_image{
 .hebergement_marseille_panneau_conteneur_logement_vignette_text_lien
 {
     text-decoration: none;
+    color: black;
 }
 .hebergement_marseille_panneau_conteneur_logement_vignette_text_lien:visited
 {
@@ -469,6 +472,7 @@ color: black;
 .hebergement_populaire_panneau_conteneur_vignette_logement_text_top_lien
 {
     text-decoration: none;
+    color: black;
 }
 .hebergement_populaire_panneau_conteneur_vignette_logement_text_top_lien:visited
 {
@@ -495,6 +499,7 @@ color: black;
 .actmarseille_panneau_conteneur_text_description_lien
 {
     text-decoration: none;
+    color: black;
 }
 .actmarseille_panneau_conteneur_text_description_lien:visited
 {
@@ -655,6 +660,7 @@ h3
 .information_lien
 {
     text-decoration: none;
+    color: black;
 }
 .information_lien:visited
 {
