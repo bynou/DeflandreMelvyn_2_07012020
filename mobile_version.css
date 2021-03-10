@@ -54,7 +54,6 @@ nav:nth-child(2)
 .research
 {
     width: 90%;
-    margin: auto;
 }
 .recherche
 {
@@ -66,7 +65,8 @@ nav:nth-child(2)
 }
 .research_bouton_mobil
 {
-    display: flex;
+    display: block;
+    text-align: center;
 }
 /* Filtres */
 .filtre_conteneur
